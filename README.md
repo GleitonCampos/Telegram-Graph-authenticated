@@ -80,7 +80,7 @@ No Debian 9 <a href="http://ftp.debian.org/debian/pool/main/o/openssl/libssl1.0.
 <br>
 "./telegram-cli: error while loading shared libraries: libpython3.4m.so.1.0: cannot open shared object file: No such file or directory"
 <pre><b>Execute este comando:</b>
-sudo ln -s /usr/lib64/libpython3.4m.so.1.0 /usr/lib64/libpython3.5m.so.1.0</pre>
+sudo ln -s /usr/lib/x86_64-linux-gnu/libpython3.5m.so.1.0 /usr/lib/x86_64-linux-gnu/libpython3.4m.so.1.0</pre>
 
 
 <!--<blockquote> <p> Debian/Ubuntu</p> </blockquote>
