@@ -52,7 +52,7 @@ O "How to" foi testado no ZABBIX 2.4, 3.0 e no 3.2 no Debian 8-9/Ubuntu 14-16 e 
 
 # Requisitos:
 
-<b>0 – </b> Estar logado com o user zabbix<br>
+<b>0 – </b> Estar logado com o user zabbix
 <br>
 <blockquote>Caso necessário, habilite como o comando abaixo e troque a senha:</blockquote>
 <pre>sudo usermod -s /bin/bash zabbix ; sudo passwd zabbix</pre>
