@@ -61,7 +61,7 @@ O "How to" foi testado no ZABBIX 2.4, 3.0 e no 3.2 no Debian 8-9/Ubuntu 14-16 e 
 <br>
 Ex:<br>
 <blockquote> <p>Debian 8 e 9/Ubuntu 14 e 16</p> </blockquote>
-<b>1.1a </b><pre>$ sudo apt-get install libreadline-dev libconfig-dev libssl-dev libevent-dev libjansson-dev libpython-dev libpython3-all-dev liblua5.2-0 git unzip make<br></pre>
+<b>1.1a </b><pre>$ sudo apt-get install -y libreadline-dev libconfig-dev libssl-dev libevent-dev libjansson-dev libpython-dev libpython3-all-dev liblua5.2-0 git unzip make<br></pre>
 
 <blockquote> <p>Debian 9/Ubuntu 16</p> </blockquote>
 <b>Está mapeado 2 possiveis erros, e para corrigi-los siga os passos:</b>
@@ -84,15 +84,15 @@ sudo ln -s /usr/lib/x86_64-linux-gnu/libpython3.5m.so.1.0 /usr/lib/x86_64-linux-
 
 
 <!--<blockquote> <p> Debian/Ubuntu</p> </blockquote>
-<pre>$ sudo apt-get install libmime-lite-perl libwww-mechanize-perl libjson-rpc-perl<br></pre>
+<pre>$ sudo apt-get install -y libmime-lite-perl libwww-mechanize-perl libjson-rpc-perl<br></pre>
 <blockquote> <p>CentOS 6.x e 7</p> </blockquote>
-<pre>yum install perl-MIME-Lite perl-WWW-Mechanize perl-JSON-RPC</pre> -->
+<pre>yum install -y perl-MIME-Lite perl-WWW-Mechanize perl-JSON-RPC</pre> -->
 
 
 <blockquote> <p>CentOS 6.x e 7</p> </blockquote>
-<b>1.1b </b><pre>sudo yum install epel-release</pre>
+<b>1.1b </b><pre>sudo yum install -y epel-release</pre>
 <b>1.2b </b><pre>sudo yum -y update</pre>
-<b>1.3b </b><pre>sudo yum install perl-CPAN openssl098e.x86_64 python34-libs libconfig-devel readline-devel libevent-devel lua-devel python-devel unzip git make</pre>
+<b>1.3b </b><pre>sudo yum install -y perl-CPAN openssl098e.x86_64 python34-libs libconfig-devel readline-devel libevent-devel lua-devel python-devel unzip git make</pre>
 <!--<b>1.4b </b><pre>$ sudo cpan</pre>
 <b>1.5b </b><pre> cpan[1]> install WWW::Mechanize JSON::RPC::Client</pre>
 <b>1.6b </b>Depois “exit” para sair. -->
