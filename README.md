@@ -31,9 +31,9 @@
 Em caso de dúvida, sugestão ou dificuldade junte-se a nós no <b>Grupo do Telegram</b> <a href="https://t.me/email_telegram" class="wikilink2" title="Ingressar no Grupo" rel="nofollow">Gráfico no Email e Telegram</a>.
 
 Envio de alarmes no ZABBIX pelo Telegram com usuário autenticado com gráficos.<br>
-<!-- O "How to" foi testado no ZABBIX 2.4, 3.0 e no 3.2 no Debian/Ubuntu e CentOS 6.x e 7. -->
+<!-- O "How to" foi testado no ZABBIX 2.4, 3.0, 3.2 e no 3.4 no Debian/Ubuntu e CentOS 6.x e 7. -->
 
-O "How to" foi testado no ZABBIX 2.4, 3.0 e no 3.2 no Debian 8-9/Ubuntu 14-16 e CentOS 6.x e 7, caso não utilize estas distros procure os pacotes descritos para sua necessidade.
+O "How to" foi testado no ZABBIX 2.4, 3.0, 3.2 e no 3.4 no Debian 8-9/Ubuntu 14-16 e CentOS 6.x e 7, caso não utilize estas distros procure os pacotes descritos para sua necessidade.
 
 # Acompanhe no Vídeo:
 
@@ -64,9 +64,11 @@ Ex:<br>
 <b>1.1a </b><pre>$ sudo apt-get install -y libreadline-dev libconfig-dev libssl-dev libevent-dev libjansson-dev libpython-dev libpython3-all-dev liblua5.2-0 git unzip make<br></pre>
 
 <blockquote> <p>Debian 9/Ubuntu 16</p> </blockquote>
-<b>Está mapeado 2 possiveis erros, e para corrigi-los siga os passos:</b>
-<i>(Homologados pelo amigo "Paulo Aguiar" <a href="https://t.me/aguiarpaulo" class="wikilink2" title="Conversar com ele" rel="nofollow">@aguiarpaulo)</a></i>
+<b>Está mapeado alguns possiveis erros, e para corrigi-los siga os passos:</b>
+<i>(Os dois primeiros homologados pelo amigo "Paulo Aguiar" <a href="https://t.me/aguiarpaulo" class="wikilink2" title="Conversar com ele" rel="nofollow">@aguiarpaulo)</a></i>
 <br>
+
+
 <b>Para o erro:</b>
 <br>
 "./telegram-cli --rsa-key tg-server.pub --config telegram.config
@@ -81,6 +83,13 @@ No Debian 9 <a href="http://ftp.debian.org/debian/pool/main/o/openssl/libssl1.0.
 "./telegram-cli: error while loading shared libraries: libpython3.4m.so.1.0: cannot open shared object file: No such file or directory"
 <pre><b>Execute este comando:</b>
 sudo ln -s /usr/lib/x86_64-linux-gnu/libpython3.5m.so.1.0 /usr/lib/x86_64-linux-gnu/libpython3.4m.so.1.0</pre>
+
+
+<b>Erro com libreadline.so.6:</b>
+<br>
+<pre><b>Execute este comando:</b>
+sudo ln -s /lib/x86_64-linux-gnu/libreadline.so.5 /lib/x86_64-linux-gnu/libreadline.so.6</pre>
+
 
 
 <!--<blockquote> <p> Debian/Ubuntu</p> </blockquote>
